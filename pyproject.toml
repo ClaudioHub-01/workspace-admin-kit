@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wskit"
+version = "1.0.0"
+description = "Kit de auditoría y administración para Google Workspace"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.0", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+google = ["google-api-python-client>=2.100", "google-auth>=2.20"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+wskit = "wskit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

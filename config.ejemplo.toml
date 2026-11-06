@@ -1,0 +1,17 @@
+# Copia este archivo como "config.toml". NUNCA subas config.toml ni las credenciales a GitHub.
+
+[auditoria]
+dias_inactividad = 60          # días sin acceso para considerar una cuenta inactiva
+
+[precios]                      # USD mensuales por licencia: usa los valores del contrato del cliente
+"Google Workspace Business Starter" = 7.0
+"Google Workspace Business Standard" = 14.0
+"Google Workspace Business Plus" = 22.0
+
+[simulado]
+carpeta = "data/simulado"
+
+[google]                       # solo para --modo google
+credenciales = "credenciales/cuenta-servicio.json"
+admin = "admin@tu-dominio.cl"  # superadministrador en cuyo nombre actúa la cuenta de servicio
+dominio = "tu-dominio.cl"
